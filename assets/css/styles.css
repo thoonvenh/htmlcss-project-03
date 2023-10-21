@@ -72,6 +72,17 @@ a {
     line-height: 1.67;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line3 {
+    --line-clamp: 3;
+}
+
 /* Header */
 
 .header {
