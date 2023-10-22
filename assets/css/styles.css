@@ -469,6 +469,10 @@ a {
     column-gap: 30px;
 }
 
+.member-item:hover .member__thumb {
+    transform: scale(1.1) translateY(-25px);
+}
+
 .member-item__img-bg {
     padding-top: 28px;
     min-width: 48%;
@@ -483,6 +487,7 @@ a {
     object-fit: cover;
     border-radius: 6px;
     overflow: hidden;
+    transition: 0.25s;
 }
 
 .member-item__name {
