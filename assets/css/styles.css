@@ -403,44 +403,125 @@ a {
 /* Feature */
 
 .feature {
-    margin: 170px 0;
+    margin-top: 85px;
+    padding: 85px 0;
 }
 
-.feature-list {
+.feature__inner {
     display: flex;
     align-items: center;
+    column-gap: 130px;
 }
 
-.feature-media {
+.feature__media {
     position: relative;
-    min-width: 49%;
-    height: 491px;
+    width: 48%;
+    min-width: 570px;
+    padding-bottom: 121px;
 }
 
-.feature-media__img-01 {
-    position: absolute;
-    left: 0;
+.feature__img-01 {
     width: 512px;
     height: 370px;
+    object-fit: cover;
     border-radius: 6px;
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
 }
 
-.feature-media__img-02 {
+.feature__img-02 {
     position: absolute;
-    top: 121px;
-    left: 238px;
+    right: 0;
+    bottom: 0;
     width: 332px;
     height: 370px;
     border-radius: 6px;
     object-fit: cover;
 }
 
-.feature-content {
-    margin-left: auto;
-    width: 468px;
+.feature__content {
+    width: 40%;
+    min-width: 468px;
 }
 
-.feature-content__btn {
+.feature__cta {
     margin-top: 38px;
+}
+
+/* Member */
+
+.member {
+    padding: 85px 0;
+}
+
+.member__header {
+    text-align: center;
+}
+
+.member__cta {
+    margin-top: 38px;
+}
+
+.member__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 70px;
+    column-gap: 30px;
+}
+
+.member-item__img-bg {
+    padding-top: 28px;
+    min-width: 48%;
+    background: #eaf6ff;
+    border-radius: 6px;
+}
+
+.member__thumb {
+    display: block;
+    width: 100%;
+    height: 305px;
+    object-fit: cover;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+.member-item__title {
+    color: #575f66;
+    font-size: 1.4rem;
+    line-height: 1.85;
+}
+
+.member-control {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 18px;
+}
+
+.member-control__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    color: #575f66;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.member-control__btn:hover {
+    cursor: pointer;
+    color: #fff;
+    background: var(--primary-btn-color);
+    border: 1px solid var(--primary-btn-color);
 }
